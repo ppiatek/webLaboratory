@@ -1,0 +1,52 @@
+
+@import "general.scss";
+
+// Variables 
+$borderColor: #000000;
+$borderWidth: 2px;
+$furColor : #ffffff;
+
+
+.animal-box {
+    background-color: #A5D7F6;
+}
+
+.rabbit {
+    
+    div {
+        background-color: $furColor;
+    }
+           
+    .head {      
+      
+        width: 80px;
+        height: 80px;
+        border: $borderWidth solid $borderColor;
+        left: 60px;
+        top: 80px;
+        border-radius: 50px;
+        
+        .ear {
+            width: 26px;
+            height: 80px;
+            border: $borderWidth solid $borderColor;
+            border-bottom-width: 0px;
+            border-radius: 21px 21px 7px 7px; 
+        }
+        .ear.ear-left {
+            left: -4px;
+            top: -69px;
+            transform: rotate(-20deg);
+        }
+        .ear.ear-right {
+            right: -4px;
+            top: -69px;
+            transform: rotate(20deg);
+        }
+    }
+    
+    .body {
+        
+    }
+    
+}
