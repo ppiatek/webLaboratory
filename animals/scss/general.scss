@@ -1,3 +1,6 @@
+
+@import "../../library/sass-css3-mixins/css3-mixins.scss";
+
 .animal-box {
   
     margin: 0 auto;
@@ -5,7 +8,12 @@
     height: 300px;
   
     div {
-      position: absolute;
+        position: absolute;
+    }
+    
+    > img {
+        margin: 0px auto;
+        opacity: 0.1;
     }
   
 }

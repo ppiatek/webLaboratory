@@ -5,13 +5,20 @@
 $borderColor: #000000;
 $borderWidth: 2px;
 $furColor : #ffffff;
-
+$cheekColor: #F6CBDA;
+$fur2color : #D9D8D8;
 
 .animal-box {
     background-color: #A5D7F6;
 }
 
-.rabbit {
+#rabbit {
+    
+    .border {
+        border-color: $borderColor;
+        border-style: solid;
+        background: none;
+    }
     
     div {
         background-color: $furColor;
@@ -19,14 +26,143 @@ $furColor : #ffffff;
            
     .head {      
       
-        width: 80px;
-        height: 80px;
-        border: $borderWidth solid $borderColor;
         left: 60px;
-        top: 80px;
-        border-radius: 50px;
+        top: 50px;
+      
+        
+        .head-1-in {
+            @include border-radius(23px 24px 0 0);
+            height: 23px;
+            left: 55px;
+            top: 71px;
+            width: 67px;
+        }
+        .head-2-in {
+            @include border-radius(52px 52px 2px 1px);
+            height: 40px;
+            left: 30px;
+            top: 71px;
+            @include transform(rotateX(38deg));
+            width: 115px;
+        }
+        .head-3-in {
+            @include border-radius(0 0 44px 40px);
+            height: 45px;
+            left: 43px;
+            top: 104px;
+            width: 102px;
+        }
+        .head-4-in {
+            @include border-radius(0 0 29px 17px);
+            height: 45px;
+            left: 31px;
+            top: 93px;
+            @include transform(rotateZ(45deg));
+            width: 60px;
+        }
+        .head-5-in {
+            @include border-radius(17px);
+            height: 30px;
+            left: 32px;
+            top:  97px;
+            width: 30px;
+        }
+        .head-6-in {
+            @include border-radius(17px 17px 25px 17px);
+            height: 30px;
+            left: 94px;
+            top: 117px;
+            width: 33px;
+        }
+        .head-7-in {
+            @include border-radius(17px 17px 26px 35px);
+            height: 30px;
+            left: 60px;
+            top: 118px;
+            width: 62px;
+        }
+        
+        
+        .head-1-out {
+            width: 56px;
+            height: 62px;
+            border-width: 3px 0 0 2.5px;
+            @include border-radius(56px 0 0 0);
+            left: 29px;
+            top: 60px;
+            @include transform(rotateX(48deg));
+        }
+        .head-2-out {
+            @include border-radius(0 58px 0 0);
+            border-width: 3px 2.5px 0 0;
+            height: 70px;
+            left: 81px;
+            top: 56.5px;
+            @include transform(rotateX(53deg));
+            width: 65px;
+        }
+        .head-3-out {
+            @include border-radius(0 0 0 15px);
+            border-width: 0 0 3px 2.5px;
+            height: 12px;
+            left: 27px;
+            top: 110px;
+            @include transform(rotateX(23deg) rotateZ(12deg) rotateY(-322deg));
+            width: 12px;
+        }
+        .head-4-out {
+            @include border-radius(15px 15px 22px 15px);
+            border-width: 0 3px 3px;
+            height: 37px;
+            left: 29px;
+            top: 110px;
+            @include transform(rotateZ(36deg) rotateX(56deg));
+            width: 56px;
+        }
+        .head-5-out {
+            @include border-radius(0px 0px 51px 0px);
+            border-width: 0 3px 3px 0px;
+            height: 39px;
+            left: 106px;
+            top: 111px;
+            width: 41px;
+            @include transform(rotateY(-36deg) rotateX(15deg));
+        }  
+        .head-6-out {
+            @include border-radius(19px);
+            border-width: 0 3px 6px;
+            height: 49px;
+            left: 65px;
+            width: 55px;
+            top: 113px;
+            @include transform(rotateX(58deg));
+        }    
+        
+        
+        .cheek-left-1 {
+            background-color: $cheekColor;
+            top: 115px;
+            left: 51px;
+            width: 22px;
+            height: 18px;
+            @include border-radius(11px 11px 13px 12px);
+            @include box-shadow(0, 0px, 2px, #f6cbda);
+            @include transform(skewX(7deg));
+        }
+        .cheek-right-1 {
+            background-color: $cheekColor;
+            top: 115px;
+            left: 103px;
+            width: 22px;
+            height: 18px;
+            @include border-radius(11px 11px 13px 12px);
+            @include box-shadow(0, 0px, 2px, #f6cbda);
+            @include transform(skewY(2deg));
+        }
+        
         
         .ear {
+            display: none;
             width: 26px;
             height: 80px;
             border: $borderWidth solid $borderColor;
@@ -36,12 +172,12 @@ $furColor : #ffffff;
         .ear.ear-left {
             left: -4px;
             top: -69px;
-            transform: rotate(-20deg);
+            @include transform(rotate(-20deg));
         }
         .ear.ear-right {
             right: -4px;
             top: -69px;
-            transform: rotate(20deg);
+            @include transform(rotate(20deg));
         }
     }
     
