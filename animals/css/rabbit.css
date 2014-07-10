@@ -334,6 +334,71 @@
       animation-name: moveeye;
       animation-fill-mode: forwards;
       animation-iteration-count: infinite; }
+  #rabbit .head .moustache-left-1 {
+    top: 117px;
+    left: 18px;
+    width: 30px;
+    height: 33px;
+    border-width: 2px 0px 0px 0px;
+    -webkit-transform: rotateZ(7deg);
+    -moz-transform: rotateZ(7deg);
+    transform: rotateZ(7deg); }
+  #rabbit .head .moustache-left-2 {
+    top: 126px;
+    left: 24px;
+    width: 26px;
+    height: 33px;
+    border-width: 2px 0px 0px 0px;
+    -webkit-transform: rotateZ(1deg);
+    -moz-transform: rotateZ(1deg);
+    transform: rotateZ(1deg); }
+  #rabbit .head .moustache-right-1 {
+    top: 116px;
+    left: 131px;
+    width: 32px;
+    height: 33px;
+    border-width: 2px 0px 0px 0px;
+    -webkit-transform: rotateZ(-3deg);
+    -moz-transform: rotateZ(-3deg);
+    transform: rotateZ(-3deg); }
+  #rabbit .head .moustache-right-2 {
+    top: 124px;
+    left: 128px;
+    width: 24px;
+    height: 33px;
+    border-width: 2px 0px 0px 0px;
+    -webkit-transform: rotateZ(5deg);
+    -moz-transform: rotateZ(5deg);
+    transform: rotateZ(5deg); }
+  #rabbit .head .mouth {
+    top: 112px;
+    left: 68px; }
+    #rabbit .head .mouth .mouth-1 {
+      top: 5px;
+      left: 23px;
+      width: 35px;
+      height: 84px;
+      border-width: 2px;
+      -webkit-transform: rotateZ(-36deg);
+      -moz-transform: rotateZ(-36deg);
+      transform: rotateZ(-36deg);
+      border-color: #000000 transparent transparent transparent;
+      -moz-border-radius: 73% 0 0 0;
+      -webkit-border-radius: 73% 0 0 0;
+      border-radius: 73% 0 0 0; }
+    #rabbit .head .mouth .mouth-2 {
+      top: 6px;
+      left: -9px;
+      width: 25px;
+      height: 33px;
+      border-width: 2px;
+      -webkit-transform: rotateZ(36deg);
+      -moz-transform: rotateZ(36deg);
+      transform: rotateZ(36deg);
+      border-color: #000000 transparent transparent transparent;
+      -moz-border-radius: 10% 35% 0 0;
+      -webkit-border-radius: 10% 35% 0 0;
+      border-radius: 10% 35% 0 0; }
   #rabbit .head .ear {
     display: none;
     width: 26px;
